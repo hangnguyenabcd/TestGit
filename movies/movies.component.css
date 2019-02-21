@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: rgb(124, 10, 118);
+}
+h3{
+    color: rgb(124, 10, 118);
+    text-align: center;
+}
+h2{
+    color: white;
+}
+.selected{
+    background: #86037e !important;
+}
+.parent{
+display: flex;
+
+}
+.movies{
+   
+    background: #8d1583;
+    padding: 0.5em 1em 0.5em 1.5em;
+    margin: 1em;
+    max-width: 18em;
+    
+}
+
+.moviesListItem{
+    font-size: 1.0em;
+    background: #cc43aa;
+    padding:0.3em ;
+    margin:0.2em ;
+    text-align: left;
+    color: white;
+
+}
+.details{
+    background: #8d1583;
+    color: white;
+    padding: 0.5em;
+    margin: 1em;
+    max-width:18em ;
+    text-align: left;
+    font-size: 1.0em;
+}

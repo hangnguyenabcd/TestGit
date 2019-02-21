@@ -1,0 +1,28 @@
+<h1>This Is My Angular 5 Tutorial Series !! </h1>
+<h3>My Favorite movies</h3>
+<div class="parent">
+  <ol class="movies">
+  <li class="moviesListItem" 
+  *ngFor = "let eachMovies of movies"
+  [class.selected]= "eachMovies === selectedMovie"
+  (click)= "onSelect(eachMovies)"
+  >
+    {{eachMovies.name}}-{{eachMovies.releaseYear}}
+   
+  </li>
+</ol>
+<div *ngIf = "selectedMovie" class="details">
+  <h2>YOU SELECTED: {{selectedMovie.name }}. Details</h2>
+  <table>
+    <tr>
+      <td>Name:</td>
+      <td><input [(ngModel)]="selectedMovie.name" placeholder="name"></td>
+    </tr>
+    <tr>
+      <td>ReleaseYear:</td>
+      <td><input [(ngModel)]="selectedMovie.releaseYear" placeholder="releaseYear"></td>
+    </tr>
+  </table>
+</div>
+
+</div>
